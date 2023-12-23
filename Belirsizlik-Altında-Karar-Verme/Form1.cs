@@ -27,6 +27,7 @@ namespace Belirsizlik_Altında_Karar_Verme
             pessimistBtn.Hide();
             optimistBtn.Hide();
             equalProbBtn.Hide();
+            regBtn.Hide();
         }
 
         private void createModel_Click(object sender, EventArgs e)
@@ -111,6 +112,7 @@ namespace Belirsizlik_Altında_Karar_Verme
                 pessimistBtn.Show();
                 optimistBtn.Show();
                 equalProbBtn.Show();
+                regBtn.Show();
                 // DataGridView oluşturulması
                 dataGridView.Dock = DockStyle.Fill;
                 dataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
@@ -713,5 +715,7 @@ namespace Belirsizlik_Altında_Karar_Verme
 
 
         }
+
+        
     }
 }

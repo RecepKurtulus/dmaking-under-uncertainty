@@ -42,7 +42,7 @@
             this.prodLabel = new System.Windows.Forms.Label();
             this.startModel = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.regBtn = new System.Windows.Forms.Button();
             this.equalProbBtn = new System.Windows.Forms.Button();
             this.alphaValueBtn = new System.Windows.Forms.TextBox();
             this.hurwiczBtn = new System.Windows.Forms.Button();
@@ -78,11 +78,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(462, 82);
+            this.label2.Location = new System.Drawing.Point(472, 77);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(332, 25);
+            this.label2.Size = new System.Drawing.Size(300, 25);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Kaç Adet Durumunuz  ve Ürününüz Var ?";
+            this.label2.Text = "Kaç Adet Kararınız ve Ürününüz Var ?";
             // 
             // prodNmbr
             // 
@@ -188,7 +188,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.regBtn);
             this.tabPage2.Controls.Add(this.equalProbBtn);
             this.tabPage2.Controls.Add(this.alphaValueBtn);
             this.tabPage2.Controls.Add(this.hurwiczBtn);
@@ -203,15 +203,15 @@
             this.tabPage2.Text = "2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // regBtn
             // 
-            this.button1.Location = new System.Drawing.Point(580, 569);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Pişmanlık";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.regBtn_Click);
+            this.regBtn.Location = new System.Drawing.Point(580, 569);
+            this.regBtn.Name = "regBtn";
+            this.regBtn.Size = new System.Drawing.Size(94, 29);
+            this.regBtn.TabIndex = 17;
+            this.regBtn.Text = "Pişmanlık";
+            this.regBtn.UseVisualStyleBackColor = true;
+            this.regBtn.Click += new System.EventHandler(this.regBtn_Click);
             // 
             // equalProbBtn
             // 
@@ -314,6 +314,6 @@
         private Button hurwiczBtn;
         private TextBox alphaValueBtn;
         private Button equalProbBtn;
-        private Button button1;
+        private Button regBtn;
     }
 }
