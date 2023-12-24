@@ -33,8 +33,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.prodNmbr = new System.Windows.Forms.TextBox();
             this.sittnNmbr = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
@@ -88,6 +86,7 @@
             // 
             this.prodNmbr.Location = new System.Drawing.Point(462, 125);
             this.prodNmbr.Name = "prodNmbr";
+            this.prodNmbr.PlaceholderText = "Karar Sayısı";
             this.prodNmbr.Size = new System.Drawing.Size(125, 27);
             this.prodNmbr.TabIndex = 3;
             // 
@@ -95,26 +94,9 @@
             // 
             this.sittnNmbr.Location = new System.Drawing.Point(669, 125);
             this.sittnNmbr.Name = "sittnNmbr";
+            this.sittnNmbr.PlaceholderText = "Durum Sayısı";
             this.sittnNmbr.Size = new System.Drawing.Size(125, 27);
             this.sittnNmbr.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(365, 132);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 20);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Karar ==>";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(800, 132);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "<== Durum";
             // 
             // tabControl1
             // 
@@ -133,9 +115,7 @@
             this.tabPage1.Controls.Add(this.prodLabel);
             this.tabPage1.Controls.Add(this.startModel);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.createModel);
-            this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.sittnNmbr);
             this.tabPage1.Controls.Add(this.prodNmbr);
@@ -279,7 +259,8 @@
             this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Belirsizlik Altında Karar Verme";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -295,9 +276,7 @@
         private Label label1;
         private Label label2;
         private TextBox situationNumber;
-        private Label label3;
         private TextBox productNumber;
-        private Label label4;
         private Button button2;
         private TextBox prodNmbr;
         private TextBox sittnNmbr;
